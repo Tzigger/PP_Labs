@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="247fe83e-66d3-43f2-978a-5b5951f25e15" name="Changes" comment="gitignore not working... Let's move it, maybe it tracked the files before me writing it...">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="247fe83e-66d3-43f2-978a-5b5951f25e15" name="Changes" comment="Let's try fixing gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Tzigger/PP_Labs.git",
+    "accountId": "9f5aafa8-d83c-47a7-af14-639ad9af607a"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -42,6 +48,11 @@
     "settings.editor.selected.configurable": "ml.llm.LLMConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
@@ -93,7 +104,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740179909286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gitignore not working... Let's move it, maybe it tracked the files before me writing it...">
+      <option name="closed" value="true" />
+      <created>1740180032248</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740180032248</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Let's try fixing gitignore">
+      <option name="closed" value="true" />
+      <created>1740180177490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740180177490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -103,6 +130,7 @@
     <MESSAGE value="New project because fuck this ig" />
     <MESSAGE value="forma poloneza - hate this polish sh..." />
     <MESSAGE value="gitignore not working... Let's move it, maybe it tracked the files before me writing it..." />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore not working... Let's move it, maybe it tracked the files before me writing it..." />
+    <MESSAGE value="Let's try fixing gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Let's try fixing gitignore" />
   </component>
 </project>
