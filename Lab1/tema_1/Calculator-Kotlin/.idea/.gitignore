@@ -1,0 +1,24 @@
+# Kotlin compiled files
+*.class
+
+# Build directories
+/build/
+/out/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Gradle specific files (if using Gradle)
+.gradle/
+build/
+
+# Temporary files
+*.tmp
