@@ -1,0 +1,1 @@
+Salut! Acesta este un text de testare, pentru a verifica funcționalitățile aplicației.  Textul conține semne de punctuație: , . ! ? și   spații multiple. De asemenea, include numere precum 123 și 456, plus alte caractere speciale.
