@@ -7,10 +7,10 @@ fun printAllRegexMatches(regex: Regex, searchString: String) {
 
 fun main() {
     val testString = "link/ether a0:b1:c2:d3:e4:f5 brd ff:ff:ff:ff:ff:ff\n" +
-                     "inet 192.168.0.2/24 brd 192.168.0.255 scope global eno1\n" +
-                     "Hi,\n You can contact me at john.smith@gmail.com\n" +
-                     "You should use a search engine like www.duckduckgo.com\n" +
-                     "I'll meet you at 08:00 AM tomorrow"
+            "inet 192.168.0.2/24 brd 192.168.0.255 scope global eno1\n" +
+            "Hi,\n You can contact me at john.smith@gmail.com\n" +
+            "You should use a search engine like www.duckduckgo.com\n" +
+            "I'll meet you at 08:00 AM tomorrow"
     val stringWithDuplicates = "one two two three three three four four four four"
 
     val ipRegex = Regex("((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)")
