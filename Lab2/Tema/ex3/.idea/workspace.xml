@@ -6,6 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c1c93cb3-3825-4676-868f-d339cf3e75d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../Lab1/tema_1/Calculator-Kotlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1/tema_1/Calculator-Kotlin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/.idea/libraries/graal_sdk.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/lab2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/out/production/lab2/Polyglot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/out/production/lab2/get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/src/Polyglot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex2/src/get.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,33 +53,20 @@
   <component name="ProjectId" id="1XtbuCELMzjLbww7jhingVUhiXo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Polyglot.executor": "Run",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/tzigger/PP/PP_Labs/Lab2/Tema/ex1",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Polyglot.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="Polyglot" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/development/graalvm-ce-java11-21.1.0" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Polyglot" />
-      <module name="lab2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}</component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -92,5 +92,15 @@
       <updated>1551010040198</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
