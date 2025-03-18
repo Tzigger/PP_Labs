@@ -1,0 +1,11 @@
+principiile SOLID pentru o arhitectură curată și extensibilă:
+
+S – Single Responsibility Principle: Fiecare clasă va avea o singură responsabilitate (ex: clasa Client se ocupă doar cu informațiile clientului, iar clasa Bilet se ocupă cu detaliile biletului).
+
+O – Open/Closed Principle: Clasele vor fi deschise pentru extindere, dar închise pentru modificare (de exemplu, noi tipuri de filme pot fi adăugate fără a modifica clasele existente).
+
+L – Liskov Substitution Principle: Subclasele trebuie să poată fi înlocuite cu clasele lor de bază fără a schimba comportamentul corect al aplicației (de exemplu, o subclasă de Film ar trebui să poată fi folosită la fel ca un obiect Film).
+
+I – Interface Segregation Principle: Clienții nu ar trebui să depindă de metode pe care nu le folosesc. De exemplu, clasa Client nu va implementa metodele de gestionare a filmelor.
+
+D – Dependency Inversion Principle: Dependențele vor fi inversate, folosind interfețe sau clase abstracte pentru a decupla componentele aplicației.
