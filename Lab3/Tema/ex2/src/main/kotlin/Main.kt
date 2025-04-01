@@ -13,10 +13,10 @@ fun main() {
 
 fun processText(text: String): String {
     var processed = text
-
+    processed = eliminatePageNumbers(processed);
     processed = eliminateMultipleSpaces(processed);
     processed = eliminateNewLines(processed);
-    processed = eliminatePageNumbers(processed);
+
     processed = eliminateAuthor(processed);
     processed = eliminateChapters(processed);
 

@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Main_calc" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="MainKt" />
-    <module name="Calculator-Kotlin" />
+    <module name="tema_1" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

@@ -6,19 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c1c93cb3-3825-4676-868f-d339cf3e75d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../Lab1/tema_1/Calculator-Kotlin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1/tema_1/Calculator-Kotlin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab1/tema_1/Calculator-Kotlin/.run/Main_calc.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1/tema_1/Calculator-Kotlin/.run/Main_calc.run.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ex1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/.idea/libraries/R_User_Library.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/.idea/libraries/graal_sdk.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/lab2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/out/production/lab2/Polyglot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/out/production/lab2/get.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/src/Polyglot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex2/src/get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab3/Tema/ex2/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab3/Tema/ex2/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab4/tema_ex2/out/production/Exercitiul2/CinemaBoxOffice.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab4/tema_ex2/out/production/Exercitiul2/CinemaBoxOffice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lab4/tema_ex2/src/main/kotlin/CinemaBoxOffice.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab4/tema_ex2/src/main/kotlin/CinemaBoxOffice.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
