@@ -9,9 +9,12 @@ Processing /var/log/apt/history.log.10:
 
 Processing /var/log/apt/history.log.1:
 
-Most recent record across all files: HistoryLogRecord(timestamp=1743620080, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew libaom3 chromium containerd firefox-locale-en firefox ghostscript-x libgs9-common ghostscript libgs9 linux-headers-generic linux-generic linux-image-generic linux-libc-dev tzdata libjavascriptcoregtk-4.1-0 gir1.2-javascriptcoregtk-4.0 gir1.2-javascriptcoregtk-4.1 gir1.2-webkit2-4.0 gir1.2-webkit2-4.1 libjavascriptcoregtk-4.0-18 libwebkit2gtk-4.1-0 libwebkit2gtk-4.0-37 xserver-xorg-core xserver-xorg-legacy xserver-common xserver-xephyr', startDate='2025-04-02  18:54:40')
+Most recent record across all files: HistoryLogRecord(timestamp=1744110521, command='apt-get upgrade', startDate='2025-04-08  11:08:41')
 
-All records from all files (sorted by timestamp):
+All records from all files:
+HistoryLogRecord(timestamp=1743620080, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew libaom3 chromium containerd firefox-locale-en firefox ghostscript-x libgs9-common ghostscript libgs9 linux-headers-generic linux-generic linux-image-generic linux-libc-dev tzdata libjavascriptcoregtk-4.1-0 gir1.2-javascriptcoregtk-4.0 gir1.2-javascriptcoregtk-4.1 gir1.2-webkit2-4.0 gir1.2-webkit2-4.1 libjavascriptcoregtk-4.0-18 libwebkit2gtk-4.1-0 libwebkit2gtk-4.0-37 xserver-xorg-core xserver-xorg-legacy xserver-common xserver-xephyr', startDate='2025-04-02  18:54:40')
+HistoryLogRecord(timestamp=1743677559, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew chromium tzdata', startDate='2025-04-03  10:52:39')
+HistoryLogRecord(timestamp=1744110521, command='apt-get upgrade', startDate='2025-04-08  11:08:41')
 HistoryLogRecord(timestamp=1707832935, command='/usr/bin/apt install python3-dev python3-venv build-essential', startDate='2024-02-13  14:02:15')
 HistoryLogRecord(timestamp=1708357130, command='/usr/bin/apt install nmap', startDate='2024-02-19  15:38:50')
 HistoryLogRecord(timestamp=1741123228, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew krb5-locales libgssapi-krb5-2 libgssapi-krb5-2:i386 libkrb5support0 libkrb5support0:i386 libkrb5-3 libkrb5-3:i386 libk5crypto3 libk5crypto3:i386 libraptor2-0 wpasupplicant', startDate='2025-03-04  21:20:28')
@@ -22,6 +25,3 @@ HistoryLogRecord(timestamp=1741779934, command='apt-get install --assume-yes --o
 HistoryLogRecord(timestamp=1742306870, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew code dart firefox-locale-en firefox foxglove-studio libfreetype6-dev libfreetype6 libfreetype-dev python3-colcon-core', startDate='2025-03-18  14:07:50')
 HistoryLogRecord(timestamp=1742467383, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew firefox-locale-en firefox libxslt1.1', startDate='2025-03-20  10:43:03')
 HistoryLogRecord(timestamp=1742628062, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew libxslt1.1', startDate='2025-03-22  07:21:02')
-HistoryLogRecord(timestamp=1743620080, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew libaom3 chromium containerd firefox-locale-en firefox ghostscript-x libgs9-common ghostscript libgs9 linux-headers-generic linux-generic linux-image-generic linux-libc-dev tzdata libjavascriptcoregtk-4.1-0 gir1.2-javascriptcoregtk-4.0 gir1.2-javascriptcoregtk-4.1 gir1.2-webkit2-4.0 gir1.2-webkit2-4.1 libjavascriptcoregtk-4.0-18 libwebkit2gtk-4.1-0 libwebkit2gtk-4.0-37 xserver-xorg-core xserver-xorg-legacy xserver-common xserver-xephyr', startDate='2025-04-02  18:54:40')
-HistoryLogRecord(timestamp=1743677559, command='apt-get install --assume-yes --option Dpkg::Options::=--force-confnew chromium tzdata', startDate='2025-04-03  10:52:39')
-HistoryLogRecord(timestamp=1744110521, command='apt-get upgrade', startDate='2025-04-08  11:08:41')

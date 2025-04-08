@@ -9,7 +9,6 @@ class HistoryLogRecord(
     val startDate: String
 ) : Comparable<HistoryLogRecord> {
 
-
     override fun compareTo(other: HistoryLogRecord): Int {
         return this.timestamp.compareTo(other.timestamp)
     }
@@ -20,7 +19,7 @@ class HistoryLogRecord(
 }
 
 fun <T : Comparable<T>> findMax(a: T, b: T): T {
-    return if (a > b) a else b
+    return if (a.compareTo(b) > 0) a else b
 }
 
 fun findHistoryLogFiles(directory: File): List<File> {
@@ -44,7 +43,7 @@ fun parseHistoryLog(file: File): MutableMap<Long, HistoryLogRecord> {
     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd  HH:mm:ss")
     
     try {
-        val lines = file.readLines().takeLast(50)
+        val lines = file.readLines().takeLast(50) // citim ultimele 50 de linii
         var startDate: String? = null
         var command: String? = null
         val otherMetadata = mutableMapOf<String, String>()
@@ -57,8 +56,11 @@ fun parseHistoryLog(file: File): MutableMap<Long, HistoryLogRecord> {
                 line.startsWith("Commandline: ") -> {
                     command = line.substringAfter("Commandline: ").trim()
                 }
-                line.startsWith("End-Date: ") -> {
+                line.startsWith("End-Date: ") -> { // daca linia incepe cu End-Date:
+                    // verificam daca am datele necesare pentru a crea un obiect HistoryLogRecord
+                    // daca am startDate si command, putem crea un obiect HistoryLogRecord     
                     if (startDate != null && command != null) {
+                        // convertim data in timestamp
                         val timestamp = try {
                             val parsedDate = LocalDateTime.parse(startDate, formatter)
                             parsedDate.toEpochSecond(java.time.ZoneOffset.UTC)
@@ -75,7 +77,9 @@ fun parseHistoryLog(file: File): MutableMap<Long, HistoryLogRecord> {
                     command = null
                     otherMetadata.clear()
                 }
-                else -> {
+                else -> {   
+                    // daca linia nu incepe cu Start-Date:, Commandline: sau End-Date:
+                    // adaugam datele in otherMetadata
                     if (line.contains(":")) {
                         val parts = line.split(":", limit = 2)
                         if (parts.size == 2) {
@@ -101,8 +105,9 @@ fun main() {
         outputFile.writeText("No history.log files found in ${searchDirectory.path}\n")
         return
     }
-    
+    // afisam numarul de fisiere history.log gasite
     var output = "Found ${historyLogs.size} history.log files:\n"
+    // afisam numele fisierelor
     historyLogs.forEach { output += "${it.path}\n" }
     
     val allRecords = mutableMapOf<Long, HistoryLogRecord>()
@@ -114,14 +119,17 @@ fun main() {
     }
     
     if (allRecords.isNotEmpty()) {
-        val firstRecord = allRecords.values.first()
-        val lastRecord = allRecords.values.last()
-        val maxRecord = findMax(firstRecord, lastRecord)
+        // Găsim cea mai recentă înregistrare folosind findMax
+        var maxRecord = allRecords.values.first()
+        allRecords.values.forEach { record ->
+            maxRecord = findMax(maxRecord, record)
+        }
         output += "\nMost recent record across all files: $maxRecord\n"
+        
+        // Afișăm toate înregistrările
+        output += "\nAll records from all files:\n"
+        allRecords.values.forEach { output += "$it\n" }
     }
-    
-    output += "\nAll records from all files (sorted by timestamp):\n"
-    allRecords.values.sortedBy { it.timestamp }.forEach { output += "$it\n" }
     
     outputFile.writeText(output)
     println("Output written to ${outputFile.absolutePath}")
