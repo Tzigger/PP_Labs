@@ -12,6 +12,7 @@ ASCII_PRINTABLE_WHITESPACE = {9, 10, 13} | set(range(32, 127))
 NON_TEXT_BYTES = set(range(0, 9)) | {11, 12} | set(range(14, 32)) | set(range(128, 256))
 
 
+
 class GenericFile:
     def get_path(self):
         raise NotImplementedError("Subclasses must implement the 'get_path' method.")
