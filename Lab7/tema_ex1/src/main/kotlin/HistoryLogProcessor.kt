@@ -6,8 +6,7 @@ import java.io.File
 class HistoryLogRecord(
     val timestamp: Long,
     val command: String,
-    val startDate: String,
-    val otherMetadata: Map<String, String> = emptyMap()
+    val startDate: String
 ) : Comparable<HistoryLogRecord> {
 
 
@@ -22,17 +21,6 @@ class HistoryLogRecord(
 
 fun <T : Comparable<T>> findMax(a: T, b: T): T {
     return if (a > b) a else b
-}
-
-fun <T> replaceInMap(
-    search: T,
-    replace: T,
-    map: MutableMap<Long, out T>
-) where T : HistoryLogRecord {
-    val entry = map.entries.find { it.value == search }
-    if (entry != null) {
-        (map as MutableMap<Long, T>)[entry.key] = replace
-    }
 }
 
 fun findHistoryLogFiles(directory: File): List<File> {
@@ -80,8 +68,7 @@ fun parseHistoryLog(file: File): MutableMap<Long, HistoryLogRecord> {
                         result[timestamp] = HistoryLogRecord(
                             timestamp = timestamp,
                             command = command,
-                            startDate = startDate,
-                            otherMetadata = otherMetadata.toMap()
+                            startDate = startDate
                         )
                     }
                     startDate = null
