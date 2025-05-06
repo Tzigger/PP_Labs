@@ -1,0 +1,27 @@
+Adapter (Adaptor)
+	Scop: "Traduce" interfața unei clase (sau a mai multor clase) într-o altă interfață pe care clientul o așteaptă. Permite claselor cu interfețe incompatibile să colaboreze.
+	Analogia: Gândește-te la un adaptor de priză (UK -> EU) sau un adaptor USB-C la USB-A. Permite conectarea a două lucruri care nu se potriveau inițial.
+	Când îl folosești: Când ai o clasă existentă care face ce ai nevoie, dar interfața ei nu se potrivește cu restul sistemului tău, sau când vrei să folosești o bibliotecă externă cu o interfață diferită.
+
+
+Proxy (Reprezentant/Intermediar)
+	Scop: Oferă un surogat (un înlocuitor sau placeholder) pentru un alt obiect, pentru a controla accesul la acesta. Proxy-ul implementează aceeași interfață ca și obiectul real.
+Funcții: Poate adăuga funcționalități înainte sau după ce cererea ajunge la obiectul real (ex: lazy loading - încarcă obiectul real doar la nevoie, control acces - verifică permisiuni, logging - înregistrează apeluri, caching - salvează rezultate).
+	Analogia: Gândește-te la un card bancar (proxy pentru contul tău), un bodyguard (controlează accesul la o persoană) sau o imagine placeholder care încarcă imaginea reală doar când e vizibilă.
+	Când îl folosești: Când vrei să adaugi un nivel de control sau o funcționalitate auxiliară la un obiect existent, fără a modifica obiectul în sine. Clientul interacționează cu Proxy-ul ca și cum ar fi obiectul real.
+
+
+Mediator (Mediator)
+	Scop: Definește un obiect care centralizează modul în care un set de alte obiecte (numite "colegi") interacționează. Promovează o cuplare slabă (loose coupling) prin faptul că obiectele nu se referă direct unele pe altele, ci comunică doar prin Mediator.
+	Funcții: Simplifică comunicarea complexă many-to-many într-o comunicare many-to-one-to-many. Mediatorul știe despre toți colegii și gestionează logica interacțiunilor.
+	Analogia: Gândește-te la un turn de control la aeroport (avioanele comunică cu turnul, nu direct între ele) sau la un chat room (participanții trimit mesaje serverului-mediator, care le distribuie celorlalți).
+	Când îl folosești: Când ai multe obiecte care comunică între ele într-un mod complex și dezordonat, iar dependențele directe devin greu de gestionat.
+
+
+Pe scurt:
+
+Adapter: Schimbă o interfață existentă cu alta. (Problemă: Incompatibilitate)
+
+Proxy: Controlează accesul la un obiect, având aceeași interfață. (Problemă: Control/Funcționalitate auxiliară)
+
+Mediator: Centralizează comunicarea între mai multe obiecte. (Problemă: Comunicație complexă/Dependențe multiple
