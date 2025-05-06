@@ -1,0 +1,84 @@
+@startuml
+
+' Interfaces
+interface LogicGate {
+    + calculateOutput(): Boolean
+}
+
+interface LogicGateImplementation {
+    + processInputs(inputs: List<Boolean>): Boolean
+}
+
+interface LogicGateBuilder {
+    + addInput(input: Boolean): LogicGateBuilder
+    + build(): LogicGate
+}
+
+' Classes
+class ANDGateImplementation {
+    + processInputs(inputs: List<Boolean>): Boolean
+}
+
+class ANDGate {
+    - implementation: LogicGateImplementation
+    - inputs: List<Boolean>
+    - fsm: LogicGateFSM
+    + calculateOutput(): Boolean
+}
+
+class LogicGateFSM {
+    - currentState: Boolean
+    + processInput(input: Boolean): void
+    + getCurrentState(): Boolean
+}
+
+class ANDGate2InputBuilder {
+    - inputs: List<Boolean>
+    + addInput(input: Boolean): LogicGateBuilder
+    + build(): LogicGate
+}
+
+class ANDGate3InputBuilder {
+    - inputs: List<Boolean>
+    + addInput(input: Boolean): LogicGateBuilder
+    + build(): LogicGate
+}
+
+class ANDGate4InputBuilder {
+    - inputs: List<Boolean>
+    + addInput(input: Boolean): LogicGateBuilder
+    + build(): LogicGate
+}
+
+class ANDGate8InputBuilder {
+    - inputs: List<Boolean>
+    + addInput(input: Boolean): LogicGateBuilder
+    + build(): LogicGate
+}
+
+' Relationships
+LogicGate <|.. ANDGate
+LogicGateImplementation <|.. ANDGateImplementation
+LogicGateBuilder <|.. ANDGate2InputBuilder
+LogicGateBuilder <|.. ANDGate3InputBuilder
+LogicGateBuilder <|.. ANDGate4InputBuilder
+LogicGateBuilder <|.. ANDGate8InputBuilder
+
+ANDGate *-- LogicGateFSM
+ANDGate o-- LogicGateImplementation
+
+ANDGate2InputBuilder ..> ANDGate : creates
+ANDGate3InputBuilder ..> ANDGate : creates
+ANDGate4InputBuilder ..> ANDGate : creates
+ANDGate8InputBuilder ..> ANDGate : creates
+
+note "Bridge Pattern" as N1
+note "Builder Pattern" as N2
+note "State Pattern" as N3
+
+LogicGate .. N1
+LogicGateImplementation .. N1
+LogicGateBuilder .. N2
+LogicGateFSM .. N3
+
+@enduml 
