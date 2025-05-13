@@ -81,11 +81,10 @@ def slow_double(x):
     time.sleep(0.5)
     return 2 * x
 
+
+
+
 if __name__ == "__main__":
-
-
-
-
     items = list(range(1, 10))
     with ThreadPool(4) as pool:
         print("Calculam patratele pentru:", items)
