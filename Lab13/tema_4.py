@@ -10,19 +10,13 @@ transition_function = lambda state, char: \
     1 if state == 2 and char == 'a' else \
     0 if state == 2 and char == 'b' else \
     0 if state == 2 else \
-    0 # Default for any other state (should not happen with 0,1,2)
+    0 
 
-# The core of the FA simulation will be a reduce operation.
-# The accumulator in reduce will be the current state of the FA.
-# The initial state is q0 (0).
-
-# `process_string` will take a string and return True if accepted, False otherwise.
-# It uses `reduce` to iterate through the string, updating the state.
 process_string = lambda input_str: \
     reduce(
-        transition_function, # The function to apply
-        input_str,           # The sequence of characters
-        0                    # The initial state (q0)
+        transition_function, 
+        input_str,           
+        0                    
     ) == 2                   # Check if the final state is the accepting state (q2)
 
 if __name__ == "__main__":
@@ -54,11 +48,6 @@ if __name__ == "__main__":
 
     all_tests_passed = True
     for s, expected in test_strings.items():
-        # Simulate processing using only lambda, map, filter, reduce
-        # In this case, only reduce and lambda are primarily used for state transition.
-        # Map/filter could be used for input preprocessing if needed, but not for the core FA logic here.
-        
-        # The `process_string` lambda already does this.
         result = process_string(s)
         
         print(f"Input: \"{s}\"")
