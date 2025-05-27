@@ -1,0 +1,1 @@
+Acesta este un exemplu de text pentru testarea criptarii cu cifrul Caesar. Cuvintele scurte nu se schimba, dar cele cu lungime potrivita vor fi criptate. Succes la laborator!
